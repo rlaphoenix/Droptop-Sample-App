@@ -1,0 +1,33 @@
+name: cd
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  # without these perms the Deploy release step fails
+  contents: "write"
+  packages: "write"
+
+jobs:
+  tagged-release:
+    name: Tagged Release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run Build action
+        id: builder
+        uses: 2bndy5/rmskin-action@v1.1.5
+      - name: Upload rmskin
+        uses: actions/upload-artifact@v2.2.4
+        with:
+          name: ${{ steps.builder.outputs.arc_name }}
+          path: ${{ github.workspace }}/${{ steps.builder.outputs.arc_name }}
+      - name: Deploy release
+        uses: marvinpinto/action-automatic-releases@latest
+        with:
+          prerelease: false
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          files: |
+            ${{ github.workspace }}/${{ steps.builder.outputs.arc_name }}
