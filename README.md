@@ -1,5 +1,9 @@
 # Droptop-Sample-App
 
+![Build status](https://github.com/rlaphoenix/Droptop-Sample-App/workflows/ci/badge.svg)
+![Min. Rainmeter Version](https://img.shields.io/badge/rainmeter-v4.5.7-blue)
+![License](https://img.shields.io/badge/license-CC%20BY--NC--SA%203.0-blue)
+
 A Sample Custom App for [Droptop Four](https://github.com/orgs/Droptop-Four).
 
 ![image](https://user-images.githubusercontent.com/17136956/166692543-f8449294-0071-4af4-8848-13a159c34d6f.png)  
