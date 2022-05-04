@@ -2,6 +2,9 @@
 
 A Sample Custom App for [Droptop Four](https://github.com/orgs/Droptop-Four).
 
+![image](https://user-images.githubusercontent.com/17136956/166692543-f8449294-0071-4af4-8848-13a159c34d6f.png)  
+*Screenshot of the App on the Windows 11 theme.*
+
 This Sample App was originally created by [@Cariboudjan](https://github.com/Cariboudjan) and has been
 copied here as a Template Git repository for easier use and to encourage an open-source environment for
 Custom Apps.
