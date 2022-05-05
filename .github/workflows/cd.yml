@@ -3,7 +3,7 @@ name: cd
 on:
   push:
     tags:
-      - "*"
+      - "*.*.*"
 
 permissions:
   # without these perms the Deploy release step fails
